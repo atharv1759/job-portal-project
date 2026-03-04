@@ -1,0 +1,118 @@
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: 80px;
+  background: var(--bg-secondary);
+}
+
+.footer__inner {
+  display: flex;
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.footer__brand {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.footer__logo-icon {
+  font-size: 24px;
+  color: var(--accent);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+.footer__tagline {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer__links {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 140px;
+}
+
+.footer__col h4 {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.footer__col a,
+.footer__col span {
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer__col a:hover { color: var(--text-primary); }
+
+.footer__bottom {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.footer__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer__bottom p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__socials span {
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-display);
+}
+
+.footer__socials span:hover { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .footer__inner { gap: 40px; }
+  .footer__links { justify-content: flex-start; gap: 32px; }
+  .footer__brand { max-width: 100%; }
+}
